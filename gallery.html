@@ -3,62 +3,137 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Visual Gallery | Harlem Plaza Redesign</title>
+  <title>Gallery | Harlem Plaza Redesign</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header id="header" class="solid">
-    <div class="container nav-container">
-      <a href="index.html" class="logo">Harlem Plaza <span>Redesign</span></a>
-      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-      <nav id="nav">
-        <ul>
+
+  <header id="header">
+    <div class="container nav-wrap">
+      <h1 class="logo"><a href="index.html">Harlem Plaza</a> Redesign</h1>
+
+      <nav>
+        <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li class="has-dropdown">
-            <a href="#" class="active">Project</a>
-            <ul class="dropdown">
+          <li class="dropdown">
+            <a href="#">Layouts</a>
+            <ul class="dropdown-menu">
               <li><a href="research.html">Research</a></li>
               <li><a href="proposal.html">Proposal</a></li>
-              <li><a href="gallery.html" class="active">Visual Gallery</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Reflection</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Review</a></li>
+          <li><a href="proposal.html" class="nav-button">Sign Up</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="page-main">
-    <section class="page-hero small-hero">
-      <div class="container">
-        <header class="major center narrow">
-          <h1>Visual Gallery</h1>
-          <p>Current views, AI-generated concepts, and presentation visuals.</p>
-        </header>
+  <section id="banner">
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <h2>Visual Gallery</h2>
+      <p>Current photos, redesign images, diagrams, and visual development for the Harlem Plaza project.</p>
+      <div class="actions">
+        <a href="proposal.html" class="button primary">View Proposal</a>
+        <a href="research.html" class="button">Read Research</a>
       </div>
+    </div>
+  </section>
+
+  <main id="main" class="container">
+
+    <section class="box special">
+      <header class="major">
+        <h2>Project Visuals<br>from analysis to redesign</h2>
+        <p>
+          This gallery brings together existing site images, AI-generated redesign concepts,
+          and supporting visuals used throughout the project presentation.
+        </p>
+      </header>
+      <span class="image featured">
+        <img src="images/redesign-1.jpg" alt="Harlem Plaza gallery hero image">
+      </span>
     </section>
 
-    <section class="section">
-      <div class="container gallery-grid">
-        <figure class="gallery-item"><img src="images/plaza-current-1.jpg" alt="Current Harlem Plaza view 1"><figcaption>Existing Plaza View</figcaption></figure>
-        <figure class="gallery-item"><img src="images/plaza-current-2.jpg" alt="Current Harlem Plaza view 2"><figcaption>Existing Plaza Conditions</figcaption></figure>
-        <figure class="gallery-item"><img src="images/redesign-1.jpg" alt="AI redesign concept 1"><figcaption>Concept: Added Planting + Seating</figcaption></figure>
-        <figure class="gallery-item"><img src="images/redesign-2.jpg" alt="AI redesign concept 2"><figcaption>Concept: Shade + Gathering Space</figcaption></figure>
-        <figure class="gallery-item"><img src="images/map.jpg" alt="Site map"><figcaption>Site Context Map</figcaption></figure>
-        <figure class="gallery-item"><img src="images/diagram.jpg" alt="Design diagram"><figcaption>Diagram of Design Strategy</figcaption></figure>
-      </div>
+    <section class="cards">
+      <article class="box special card">
+        <span class="image featured">
+          <img src="images/plaza-current-1.jpg" alt="Existing Harlem Plaza photo">
+        </span>
+        <h3>Existing Plaza View</h3>
+        <p>
+          A documentation image showing the current condition of the site before redesign.
+        </p>
+        <a href="research.html" class="button alt">Learn More</a>
+      </article>
+
+      <article class="box special card">
+        <span class="image featured">
+          <img src="images/plaza-current-2.jpg" alt="Existing conditions image">
+        </span>
+        <h3>Site Conditions</h3>
+        <p>
+          Another view highlighting exposure, material conditions, and opportunities for improvement.
+        </p>
+        <a href="research.html" class="button alt">Learn More</a>
+      </article>
     </section>
+
+    <section class="cards">
+      <article class="box special card">
+        <span class="image featured">
+          <img src="images/redesign-2.jpg" alt="AI redesign rendering">
+        </span>
+        <h3>Redesign Rendering</h3>
+        <p>
+          A developed concept showing how greenery, seating, and shade can reshape the space.
+        </p>
+        <a href="proposal.html" class="button alt">Learn More</a>
+      </article>
+
+      <article class="box special card">
+        <span class="image featured">
+          <img src="images/map.jpg" alt="Map graphic">
+        </span>
+        <h3>Site Map</h3>
+        <p>
+          The project map explains location, circulation, and the spatial relationship of the plaza.
+        </p>
+        <a href="proposal.html" class="button alt">Learn More</a>
+      </article>
+    </section>
+
   </main>
 
-  <footer id="footer">
+  <section id="cta">
     <div class="container">
-      <p>© 2026 Harlem Plaza Redesign Project.</p>
+      <h2>Finish with the reflection page</h2>
+      <p>Review the final project summary and reflection for the Harlem Plaza redesign.</p>
+      <form class="cta-form">
+        <input type="email" placeholder="Email Address">
+        <button type="submit">Sign Up</button>
+      </form>
     </div>
+  </section>
+
+  <footer id="footer">
+    <ul class="icons">
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Github</a></li>
+      <li><a href="#">Portfolio</a></li>
+    </ul>
+    <ul class="copyright">
+      <li>© Harlem Plaza Redesign</li>
+      <li>Academic Midterm Project</li>
+    </ul>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
