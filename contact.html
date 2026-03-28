@@ -3,76 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Review | Harlem Plaza Redesign</title>
+  <title>Reflection | Harlem Plaza Redesign</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header id="header" class="solid">
-    <div class="container nav-container">
-      <a href="index.html" class="logo">Harlem Plaza <span>Redesign</span></a>
-      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-      <nav id="nav">
-        <ul>
+
+  <header id="header">
+    <div class="container nav-wrap">
+      <h1 class="logo"><a href="index.html">Harlem Plaza</a> Redesign</h1>
+
+      <nav>
+        <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li class="has-dropdown">
-            <a href="#">Project</a>
-            <ul class="dropdown">
+          <li class="dropdown">
+            <a href="#">Layouts</a>
+            <ul class="dropdown-menu">
               <li><a href="research.html">Research</a></li>
               <li><a href="proposal.html">Proposal</a></li>
-              <li><a href="gallery.html">Visual Gallery</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Reflection</a></li>
             </ul>
           </li>
-          <li><a href="contact.html" class="active">Review</a></li>
+          <li><a href="proposal.html" class="nav-button">Sign Up</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="page-main">
-    <section class="page-hero small-hero">
-      <div class="container">
-        <header class="major center narrow">
-          <h1>Academic Project Review</h1>
-          <p>This page can be used as your final reflective/project summary page.</p>
-        </header>
+  <section id="banner">
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <h2>Project Reflection</h2>
+      <p>A final summary of the process, design thinking, and what this redesign aimed to improve.</p>
+      <div class="actions">
+        <a href="proposal.html" class="button primary">Open Proposal</a>
+        <a href="gallery.html" class="button">View Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="container">
+
+    <section class="box special">
+      <header class="major">
+        <h2>Final Reflection<br>on the Harlem Plaza redesign</h2>
+        <p>
+          This project explored how design can improve a public space without removing its
+          identity. Through site research, diagrams, and AI-assisted image generation,
+          I tested ways to make Harlem Plaza more comfortable, greener, and more welcoming.
+        </p>
+      </header>
+      <span class="image featured">
+        <img src="images/redesign-2.jpg" alt="Final Harlem Plaza redesign image">
+      </span>
+    </section>
+
+    <section class="box special features">
+      <div class="features-row">
+        <section>
+          <span class="icon-circle accent1">🔍</span>
+          <h3>Research</h3>
+          <p>
+            The project began by analyzing the current site and identifying key issues in comfort,
+            use, visibility, and public atmosphere.
+          </p>
+        </section>
+        <section>
+          <span class="icon-circle accent2">🤖</span>
+          <h3>AI Exploration</h3>
+          <p>
+            AI-generated concepts made it possible to test multiple design directions and compare
+            how different changes might affect the plaza.
+          </p>
+        </section>
+      </div>
+      <div class="features-row">
+        <section>
+          <span class="icon-circle accent3">🎨</span>
+          <h3>Design Thinking</h3>
+          <p>
+            The final design focused on adding greenery, better seating, improved circulation,
+            and a stronger visual identity.
+          </p>
+        </section>
+        <section>
+          <span class="icon-circle accent4">🏙️</span>
+          <h3>Final Outcome</h3>
+          <p>
+            The redesign presents Harlem Plaza as a more welcoming and useful public space
+            for everyday community life.
+          </p>
+        </section>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container two-column">
-        <article class="panel text-panel">
-          <h2>What This Project Demonstrates</h2>
-          <ul class="check-list">
-            <li>Site observation and research</li>
-            <li>AI-assisted visual exploration</li>
-            <li>Design iteration and evaluation</li>
-            <li>Clear final proposal communication</li>
-            <li>Professional website presentation</li>
-          </ul>
-        </article>
+    <section class="cards">
+      <article class="box special card">
+        <span class="image featured">
+          <img src="images/diagram.jpg" alt="Project diagram">
+        </span>
+        <h3>What I Learned</h3>
+        <p>
+          I learned how research, visual communication, and iterative design can work together
+          to present a stronger proposal.
+        </p>
+        <a href="research.html" class="button alt">Learn More</a>
+      </article>
 
-        <article class="panel text-panel">
-          <h2>Reflection</h2>
-          <p>
-            Through this project, I explored how design can improve a public space without removing its existing identity. Using research and AI-generated mockups helped me test possible changes and present a stronger final proposal.
-          </p>
-          <p>
-            The final redesign focuses on comfort, greenery, and community use, showing how thoughtful design can make a plaza feel more usable and welcoming.
-          </p>
-        </article>
-      </div>
+      <article class="box special card">
+        <span class="image featured">
+          <img src="images/map.jpg" alt="Site context map">
+        </span>
+        <h3>Project Impact</h3>
+        <p>
+          Even small public-space changes can affect comfort, social use, and the identity
+          of a neighborhood space.
+        </p>
+        <a href="proposal.html" class="button alt">Learn More</a>
+      </article>
     </section>
+
   </main>
 
-  <footer id="footer">
+  <section id="cta">
     <div class="container">
-      <p>© 2026 Harlem Plaza Redesign Project.</p>
+      <h2>Project complete</h2>
+      <p>This redesign combines research, AI exploration, and final proposal presentation in one site.</p>
+      <form class="cta-form">
+        <input type="email" placeholder="Email Address">
+        <button type="submit">Sign Up</button>
+      </form>
     </div>
+  </section>
+
+  <footer id="footer">
+    <ul class="icons">
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Github</a></li>
+      <li><a href="#">Portfolio</a></li>
+    </ul>
+    <ul class="copyright">
+      <li>© Harlem Plaza Redesign</li>
+      <li>Academic Midterm Project</li>
+    </ul>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
