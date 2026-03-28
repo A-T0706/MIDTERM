@@ -1,77 +1,157 @@
 <!DOCTYPE html>
-          <li class="has-dropdown">
-            <a href="#" class="active">Project</a>
-            <ul class="dropdown">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | Harlem Plaza Redesign</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="header">
+    <div class="container nav-wrap">
+      <h1 class="logo"><a href="index.html">Harlem Plaza</a> Redesign</h1>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Layouts</a>
+            <ul class="dropdown-menu">
               <li><a href="research.html">Research</a></li>
-              <li><a href="proposal.html" class="active">Proposal</a></li>
-              <li><a href="gallery.html">Visual Gallery</a></li>
+              <li><a href="proposal.html">Proposal</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Reflection</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Review</a></li>
+          <li><a href="proposal.html" class="nav-button">Sign Up</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="page-main">
-    <section class="page-hero small-hero">
-      <div class="container">
-        <header class="major center narrow">
-          <h1>Final Redesign Proposal</h1>
-          <p>A calmer and greener public plaza built around comfort, identity, and everyday use.</p>
-        </header>
+  <section id="banner">
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <h2>Site Research</h2>
+      <p>Studying the existing conditions of Harlem Plaza and identifying opportunities for redesign.</p>
+      <div class="actions">
+        <a href="proposal.html" class="button primary">View Proposal</a>
+        <a href="gallery.html" class="button">See Visuals</a>
       </div>
+    </div>
+  </section>
+
+  <main id="main" class="container">
+
+    <section class="box special">
+      <header class="major">
+        <h2>Research Findings<br>and Existing Conditions</h2>
+        <p>
+          This stage of the project focused on understanding how Harlem Plaza works now.
+          I looked at comfort, circulation, visibility, seating, greenery, and the overall
+          atmosphere of the plaza as a public space.
+        </p>
+      </header>
+      <span class="image featured">
+        <img src="images/plaza-current-2.jpg" alt="Current conditions at Harlem Plaza">
+      </span>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="proposal-grid">
-          <article class="panel text-panel">
-            <h2>Proposal Summary</h2>
-            <p>
-              The redesign introduces layered greenery, flexible seating, shaded rest areas, and a more intentional circulation pattern. These changes aim to improve both environmental comfort and social use.
-            </p>
-            <p>
-              The goal is not just beautification. The redesign supports a plaza that feels healthier, more welcoming, and more connected to the surrounding community.
-            </p>
-          </article>
-
-          <article class="panel text-panel">
-            <h3>Main Interventions</h3>
-            <ul class="check-list">
-              <li>Tree planters and planting beds</li>
-              <li>Shaded seating clusters</li>
-              <li>Flexible benches and movable chairs</li>
-              <li>Stronger visual framing of pathways</li>
-              <li>Spaces for pause, gathering, and observation</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section muted">
-      <div class="container image-text-grid reverse">
-        <div class="panel text-panel">
-          <h2>Why More Greenery Matters</h2>
+    <section class="box special features">
+      <div class="features-row">
+        <section>
+          <span class="icon-circle accent1">🌿</span>
+          <h3>Limited Greenery</h3>
           <p>
-            More planting can soften the plaza visually, increase comfort, and make the site feel more inviting. It also helps create a stronger sense of place.
+            The site has room for more planting, shade, and natural elements that would
+            make the environment feel softer and more inviting.
           </p>
+        </section>
+        <section>
+          <span class="icon-circle accent2">☀️</span>
+          <h3>Exposure to Heat</h3>
           <p>
-            In the redesign images, greenery is used both as an environmental tool and as a design language that makes the plaza feel more cared for.
+            Some parts of the plaza feel too exposed during warmer weather, reducing comfort
+            and limiting how long people want to stay.
           </p>
-        </div>
-        <img src="images/redesign-2.jpg" alt="Rendered redesign proposal with greenery and seating" />
+        </section>
+      </div>
+      <div class="features-row">
+        <section>
+          <span class="icon-circle accent3">🪑</span>
+          <h3>Need for Seating</h3>
+          <p>
+            More flexible and comfortable seating could support students, families,
+            workers, and community gathering.
+          </p>
+        </section>
+        <section>
+          <span class="icon-circle accent4">🚶</span>
+          <h3>Circulation Issues</h3>
+          <p>
+            Better visual organization and clearer walking paths could improve movement
+            and make the plaza easier to navigate.
+          </p>
+        </section>
       </div>
     </section>
+
+    <section class="cards">
+      <article class="box special card">
+        <span class="image featured">
+          <img src="images/map.jpg" alt="Map of Harlem Plaza site">
+        </span>
+        <h3>Site Context</h3>
+        <p>
+          Mapping the surrounding streets and access points helped show how people move
+          into and through the plaza throughout the day.
+        </p>
+        <a href="gallery.html" class="button alt">Learn More</a>
+      </article>
+
+      <article class="box special card">
+        <span class="image featured">
+          <img src="images/diagram.jpg" alt="Research diagram for Harlem Plaza">
+        </span>
+        <h3>Design Analysis</h3>
+        <p>
+          Diagrams were used to break down the plaza into design issues including shade,
+          use patterns, gathering spaces, and visual identity.
+        </p>
+        <a href="proposal.html" class="button alt">Learn More</a>
+      </article>
+    </section>
+
   </main>
 
-  <footer id="footer">
+  <section id="cta">
     <div class="container">
-      <p>© 2026 Harlem Plaza Redesign Project.</p>
+      <h2>Continue to the proposal</h2>
+      <p>See how the research developed into a final redesign concept for Harlem Plaza.</p>
+      <form class="cta-form">
+        <input type="email" placeholder="Email Address">
+        <button type="submit">Sign Up</button>
+      </form>
     </div>
+  </section>
+
+  <footer id="footer">
+    <ul class="icons">
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Github</a></li>
+      <li><a href="#">Portfolio</a></li>
+    </ul>
+    <ul class="copyright">
+      <li>© Harlem Plaza Redesign</li>
+      <li>Academic Midterm Project</li>
+    </ul>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
