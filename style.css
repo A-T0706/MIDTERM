@@ -1,0 +1,84 @@
+:root {
+  }
+
+  #nav.open {
+    display: block;
+  }
+
+  #nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.4rem;
+  }
+
+  #nav a {
+    color: var(--heading) !important;
+    background: transparent !important;
+    border-radius: 12px;
+  }
+
+  #nav a:hover,
+  #nav a.active {
+    background: rgba(76,136,255,0.12) !important;
+  }
+
+  .has-dropdown:hover .dropdown {
+    display: none !important;
+  }
+
+  .dropdown {
+    position: static;
+    display: flex !important;
+    box-shadow: none;
+    border: 0;
+    background: #f4f7fb;
+    margin-left: 0.4rem;
+  }
+
+  .intro-panel,
+  .feature-card,
+  .pricing-card,
+  .text-panel,
+  .spotlight-content {
+    padding: 1.4rem;
+  }
+
+  .cta-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 680px) {
+  .feature-grid.four,
+  .pricing-grid,
+  .spotlight-grid,
+  .gallery-grid,
+  .proposal-grid,
+  .image-text-grid,
+  .image-text-grid.reverse,
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .spotlight-card.wide {
+    grid-column: auto;
+  }
+
+  #banner {
+    min-height: 88vh;
+  }
+
+  .banner-inner {
+    padding-top: 8rem;
+  }
+
+  #banner h1,
+  .page-hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .intro-card-wrap {
+    margin-top: -50px;
+  }
+}
