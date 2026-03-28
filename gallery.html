@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visual Gallery | Harlem Plaza Redesign</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="header" class="solid">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Harlem Plaza <span>Redesign</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="has-dropdown">
+            <a href="#" class="active">Project</a>
+            <ul class="dropdown">
+              <li><a href="research.html">Research</a></li>
+              <li><a href="proposal.html">Proposal</a></li>
+              <li><a href="gallery.html" class="active">Visual Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Review</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero small-hero">
+      <div class="container">
+        <header class="major center narrow">
+          <h1>Visual Gallery</h1>
+          <p>Current views, AI-generated concepts, and presentation visuals.</p>
+        </header>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container gallery-grid">
+        <figure class="gallery-item"><img src="images/plaza-current-1.jpg" alt="Current Harlem Plaza view 1"><figcaption>Existing Plaza View</figcaption></figure>
+        <figure class="gallery-item"><img src="images/plaza-current-2.jpg" alt="Current Harlem Plaza view 2"><figcaption>Existing Plaza Conditions</figcaption></figure>
+        <figure class="gallery-item"><img src="images/redesign-1.jpg" alt="AI redesign concept 1"><figcaption>Concept: Added Planting + Seating</figcaption></figure>
+        <figure class="gallery-item"><img src="images/redesign-2.jpg" alt="AI redesign concept 2"><figcaption>Concept: Shade + Gathering Space</figcaption></figure>
+        <figure class="gallery-item"><img src="images/map.jpg" alt="Site map"><figcaption>Site Context Map</figcaption></figure>
+        <figure class="gallery-item"><img src="images/diagram.jpg" alt="Design diagram"><figcaption>Diagram of Design Strategy</figcaption></figure>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <p>© 2026 Harlem Plaza Redesign Project.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
